@@ -1,6 +1,7 @@
 package com.mahakeemmk.tictactoe
 
 import android.graphics.Color
+import android.graphics.drawable.Animatable
 import android.os.Bundle
 import android.support.v7.app.AlertDialog
 import android.support.v7.app.AppCompatActivity
@@ -114,47 +115,65 @@ class HumanVsComputerActivity:AppCompatActivity() {
         if (currentPlayer == Players.PERSON) {
             when(option) {
                 1 -> {
-                    button1.setImageResource(R.drawable.ic_close_black_24dp)
+                    button1.setImageResource(R.drawable.cross_animation)
+                    val animatable:Animatable = button1.drawable as Animatable
+                    animatable.start()
                     button1.isEnabled = false
                     disabledButtons.add(button1)
                 }
                 2 -> {
-                    button2.setImageResource(R.drawable.ic_close_black_24dp)
+                    button2.setImageResource(R.drawable.cross_animation)
+                    val animatable:Animatable = button2.drawable as Animatable
+                    animatable.start()
                     button2.isEnabled = false
                     disabledButtons.add(button2)
                 }
                 3 -> {
-                    button3.setImageResource(R.drawable.ic_close_black_24dp)
+                    button3.setImageResource(R.drawable.cross_animation)
+                    val animatable:Animatable = button3.drawable as Animatable
+                    animatable.start()
                     button3.isEnabled = false
                     disabledButtons.add(button3)
                 }
                 4 -> {
-                    button4.setImageResource(R.drawable.ic_close_black_24dp)
+                    button4.setImageResource(R.drawable.cross_animation)
+                    val animatable:Animatable = button4.drawable as Animatable
+                    animatable.start()
                     button4.isEnabled = false
                     disabledButtons.add(button4)
                 }
                 5 -> {
-                    button5.setImageResource(R.drawable.ic_close_black_24dp)
+                    button5.setImageResource(R.drawable.cross_animation)
+                    val animatable:Animatable = button5.drawable as Animatable
+                    animatable.start()
                     button5.isEnabled = false
                     disabledButtons.add(button5)
                 }
                 6 -> {
-                    button6.setImageResource(R.drawable.ic_close_black_24dp)
+                    button6.setImageResource(R.drawable.cross_animation)
+                    val animatable:Animatable = button6.drawable as Animatable
+                    animatable.start()
                     button6.isEnabled = false
                     disabledButtons.add(button6)
                 }
                 7 -> {
-                    button7.setImageResource(R.drawable.ic_close_black_24dp)
+                    button7.setImageResource(R.drawable.cross_animation)
+                    val animatable:Animatable = button7.drawable as Animatable
+                    animatable.start()
                     button7.isEnabled = false
                     disabledButtons.add(button7)
                 }
                 8 -> {
-                    button8.setImageResource(R.drawable.ic_close_black_24dp)
+                    button8.setImageResource(R.drawable.cross_animation)
+                    val animatable:Animatable = button8.drawable as Animatable
+                    animatable.start()
                     button8.isEnabled = false
                     disabledButtons.add(button8)
                 }
                 9 -> {
-                    button9.setImageResource(R.drawable.ic_close_black_24dp)
+                    button9.setImageResource(R.drawable.cross_animation)
+                    val animatable:Animatable = button9.drawable as Animatable
+                    animatable.start()
                     button9.isEnabled = false
                     disabledButtons.add(button9)
                 }
@@ -162,47 +181,65 @@ class HumanVsComputerActivity:AppCompatActivity() {
         } else {
             when(option) {
                 1 -> {
-                    button1.setImageResource(R.drawable.ic_circle_black_24dp)
+                    button1.setImageResource(R.drawable.circle_animation)
+                    val animatable:Animatable = button1.drawable as Animatable
+                    animatable.start()
                     button1.isEnabled = false
                     disabledButtons.add(button1)
                 }
                 2 -> {
-                    button2.setImageResource(R.drawable.ic_circle_black_24dp)
+                    button2.setImageResource(R.drawable.circle_animation)
+                    val animatable:Animatable = button2.drawable as Animatable
+                    animatable.start()
                     button2.isEnabled = false
                     disabledButtons.add(button2)
                 }
                 3 -> {
-                    button3.setImageResource(R.drawable.ic_circle_black_24dp)
+                    button3.setImageResource(R.drawable.circle_animation)
+                    val animatable:Animatable = button3.drawable as Animatable
+                    animatable.start()
                     button3.isEnabled = false
                     disabledButtons.add(button3)
                 }
                 4 -> {
-                    button4.setImageResource(R.drawable.ic_circle_black_24dp)
+                    button4.setImageResource(R.drawable.circle_animation)
+                    val animatable:Animatable = button4.drawable as Animatable
+                    animatable.start()
                     button4.isEnabled = false
                     disabledButtons.add(button4)
                 }
                 5 -> {
-                    button5.setImageResource(R.drawable.ic_circle_black_24dp)
+                    button5.setImageResource(R.drawable.circle_animation)
+                    val animatable:Animatable = button5.drawable as Animatable
+                    animatable.start()
                     button5.isEnabled = false
                     disabledButtons.add(button5)
                 }
                 6 -> {
-                    button6.setImageResource(R.drawable.ic_circle_black_24dp)
+                    button6.setImageResource(R.drawable.circle_animation)
+                    val animatable:Animatable = button6.drawable as Animatable
+                    animatable.start()
                     button6.isEnabled = false
                     disabledButtons.add(button6)
                 }
                 7 -> {
-                    button7.setImageResource(R.drawable.ic_circle_black_24dp)
+                    button7.setImageResource(R.drawable.circle_animation)
+                    val animatable:Animatable = button7.drawable as Animatable
+                    animatable.start()
                     button7.isEnabled = false
                     disabledButtons.add(button7)
                 }
                 8 -> {
-                    button8.setImageResource(R.drawable.ic_circle_black_24dp)
+                    button8.setImageResource(R.drawable.circle_animation)
+                    val animatable:Animatable = button8.drawable as Animatable
+                    animatable.start()
                     button8.isEnabled = false
                     disabledButtons.add(button8)
                 }
                 9 -> {
-                    button9.setImageResource(R.drawable.ic_circle_black_24dp)
+                    button9.setImageResource(R.drawable.circle_animation)
+                    val animatable:Animatable = button9.drawable as Animatable
+                    animatable.start()
                     button9.isEnabled = false
                     disabledButtons.add(button9)
                 }

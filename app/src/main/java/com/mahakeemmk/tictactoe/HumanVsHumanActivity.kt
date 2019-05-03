@@ -1,6 +1,7 @@
 package com.mahakeemmk.tictactoe
 
 import android.graphics.Color
+import android.graphics.drawable.Animatable
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.app.AlertDialog
@@ -88,12 +89,16 @@ class HumanVsHumanActivity : AppCompatActivity() {
     private fun selectOption(option: Int, currentPlayer: Player?,button:ImageButton) {
         if (currentPlayer == Player.PLAYER1) {
             player1Options.add(option)
-            button.setImageResource(R.drawable.ic_close_black_24dp)
+            button.setImageResource(R.drawable.cross_animation)
+            val animatable:Animatable = button.drawable as Animatable
+            animatable.start()
             disableButton(button)
             switchPlayer()
         } else {
             player2Options.add(option)
-            button.setImageResource(R.drawable.ic_circle_black_24dp)
+            button.setImageResource(R.drawable.circle_animation)
+            val animatable:Animatable = button.drawable as Animatable
+            animatable.start()
             disableButton(button)
             switchPlayer()
         }
