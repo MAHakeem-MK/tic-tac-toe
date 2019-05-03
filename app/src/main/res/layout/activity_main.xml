@@ -6,83 +6,43 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity" android:background="@drawable/wood_background">
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/player_title"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="8dp" android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toTopOf="@+id/tableLayout" app:layout_constraintHorizontal_bias="0.498"
-            android:textSize="30sp" android:layout_marginTop="32dp" app:layout_constraintTop_toTopOf="parent"/>
-    <TableLayout
-            android:layout_width="0dp"
-            android:layout_height="380dp"
-            android:layout_marginTop="8dp"
-            app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="8dp" android:background="@android:color/black" android:padding="5dp"
-            android:id="@+id/tableLayout">
 
-        <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
-            <ImageButton
-                    android:layout_width="0dp"
-                    android:layout_height="130dp"
-                    android:id="@+id/button1" android:layout_weight="1"
-                    android:background="@drawable/custom_imagebutton_background" android:onClick="onButtonClick"
-            />
-            <ImageButton
-                    android:layout_width="0dp"
-                    android:layout_height="130dp"
-                    android:id="@+id/button2" android:layout_weight="1"
-                    android:background="@drawable/custom_imagebutton_background" android:onClick="onButtonClick"
-            />
-            <ImageButton
-                    android:layout_width="0dp"
-                    android:layout_height="130dp"
-                    android:id="@+id/button3" android:layout_weight="1"
-                    android:background="@drawable/custom_imagebutton_background" android:onClick="onButtonClick"
-            />
-        </TableRow>
-        <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
-            <ImageButton
-                    android:layout_width="0dp"
-                    android:layout_height="130dp"
-                    android:id="@+id/button4" android:layout_weight="1"
-                    android:background="@drawable/custom_imagebutton_background" android:onClick="onButtonClick"
-            />
-            <ImageButton
-                    android:layout_width="0dp"
-                    android:layout_height="130dp"
-                    android:id="@+id/button5" android:layout_weight="1"
-                    android:background="@drawable/custom_imagebutton_background" android:onClick="onButtonClick"
-            />
-            <ImageButton
-                    android:layout_width="0dp"
-                    android:layout_height="130dp"
-                    android:id="@+id/button6" android:layout_weight="1"
-                    android:background="@drawable/custom_imagebutton_background" android:onClick="onButtonClick"
-            />
-        </TableRow>
-        <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
-            <ImageButton
-                    android:layout_width="0dp"
-                    android:layout_height="130dp"
-                    android:id="@+id/button7" android:layout_weight="1"
-                    android:background="@drawable/custom_imagebutton_background" android:onClick="onButtonClick"
-            />
-            <ImageButton
-                    android:layout_width="0dp"
-                    android:layout_height="130dp"
-                    android:id="@+id/button8" android:layout_weight="1"
-                    android:background="@drawable/custom_imagebutton_background" android:onClick="onButtonClick"
-            />
-            <ImageButton
-                    android:layout_width="0dp"
-                    android:layout_height="130dp"
-                    android:id="@+id/button9" android:layout_weight="1"
-                    android:background="@drawable/custom_imagebutton_background" android:onClick="onButtonClick"
-            />
-        </TableRow>
-    </TableLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="32dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="308dp" app:layout_constraintHorizontal_bias="0.497"
+            android:id="@+id/linearLayout" android:layout_marginTop="65dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+        <Button
+                android:text="Human vs Human"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/human_human_btn"
+                android:background="@drawable/custom_menu_btn_background"
+                android:textColor="@android:color/background_dark" android:paddingLeft="8dp" android:paddingRight="8dp"
+                android:paddingStart="8dp" android:paddingEnd="8dp"
+        />
+        <Button
+                android:text="Human vs Computer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/human_computer_btn"
+                android:background="@drawable/custom_menu_btn_background"
+                android:textColor="@android:color/background_dark" android:paddingLeft="8dp" android:paddingRight="8dp"
+                android:paddingStart="8dp" android:paddingEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+        />
+    </LinearLayout>
+    <TextView
+            android:text="TIC TAC TOE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/textView" app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="139dp"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            android:textSize="36sp" android:fontFamily="sans-serif-black" android:textColor="@android:color/white"/>
 </android.support.constraint.ConstraintLayout>
