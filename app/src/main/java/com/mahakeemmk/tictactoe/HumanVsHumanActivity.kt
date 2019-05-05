@@ -2,6 +2,7 @@ package com.mahakeemmk.tictactoe
 
 import android.graphics.Color
 import android.graphics.drawable.Animatable
+import android.media.MediaPlayer
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.app.AlertDialog
@@ -26,10 +27,12 @@ class HumanVsHumanActivity : AppCompatActivity() {
     var player1Options:ArrayList<Int> = ArrayList()
     var player2Options:ArrayList<Int> = ArrayList()
     var disabledButtons:ArrayList<ImageButton> = ArrayList()
+    lateinit var mediaPlayer:MediaPlayer
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.game_board_layout)
+        mediaPlayer = MediaPlayer.create(this,R.raw.pencil)
         startGame()
     }
 
@@ -54,6 +57,7 @@ class HumanVsHumanActivity : AppCompatActivity() {
     }
 
     fun onButtonClick(view: View) {
+        mediaPlayer.start()
         var selectedButton = view as ImageButton
         when(view.id) {
             R.id.button1 -> {
